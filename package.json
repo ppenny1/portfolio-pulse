@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-pulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weekly AI agent that reviews Apps That Help rankings and ratings and emails a report",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0",
+    "@cloudflare/workers-types": "^5.20260811.1"
+  }
+}

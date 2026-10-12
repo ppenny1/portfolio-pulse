@@ -1,0 +1,15 @@
+name = "portfolio-pulse"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+# Every Monday at 12:00 UTC = 8:00 AM Eastern
+[triggers]
+crons = ["0 12 * * 1"]
+
+# Reads the aso-tracker database (rankings + ratings). Read-only by design.
+[[d1_databases]]
+binding = "DB"
+database_name = "aso-tracker"
+database_id = "c313e381-ef81-4fa5-a521-4dffd1844d46"
+
+# Secrets (set with wrangler secret put): ANTHROPIC_API_KEY, RESEND_API_KEY, RUN_TOKEN
