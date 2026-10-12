@@ -2,9 +2,9 @@ name = "portfolio-pulse"
 main = "src/index.ts"
 compatibility_date = "2026-08-01"
 
-# Every Monday at 12:00 UTC = 8:00 AM Eastern
+# Every Monday at 12:30 UTC = 8:30 AM Eastern (7:30 AM after daylight saving ends)
 [triggers]
-crons = ["0 12 * * 1"]
+crons = ["30 12 * * 1"]
 
 # Reads the aso-tracker database (rankings + ratings). Read-only by design.
 [[d1_databases]]

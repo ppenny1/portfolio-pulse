@@ -3,7 +3,7 @@
 Weekly AI agent for the Apps That Help portfolio. Internal tool, no public users.
 
 ## What it does
-Every Monday 12:00 UTC (8 AM Eastern), a Cloudflare Worker cron:
+Every Monday 12:30 UTC (8:30 AM Eastern daylight time), a Cloudflare Worker cron:
 1. Reads keyword rankings (now vs 7 days ago) and iOS ratings from the aso-tracker D1 database (read-only binding)
 2. Sends the data to the Claude API (claude-sonnet-5) for a report: wins, drops, ratings, up to 3 actions
 3. Emails the report via Resend from pulse@appsthathelp.com to appsthathelphq@gmail.com
